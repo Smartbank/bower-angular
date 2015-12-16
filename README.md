@@ -1,43 +1,7 @@
-# packaged angular
+# Smartbank packaged angular
 
-This repo is for distribution on `npm` and `bower`. The source for this module is in the
-[main AngularJS repo](https://github.com/angular/angular.js).
-Please file issues and pull requests against that repo.
-
-## Install
-
-You can install this package either with `npm` or with `bower`.
-
-### npm
-
-```shell
-npm install angular
-```
-
-Then add a `<script>` to your `index.html`:
-
-```html
-<script src="/node_modules/angular/angular.js"></script>
-```
-
-Or `require('angular')` from your code.
-
-### bower
-
-```shell
-bower install angular
-```
-
-Then add a `<script>` to your `index.html`:
-
-```html
-<script src="/bower_components/angular/angular.js"></script>
-```
-
-## Documentation
-
-Documentation is available on the
-[AngularJS docs site](http://docs.angularjs.org/).
+This repo is using the Smartbank patched version of angular.js in bower.json. The source for this module is in the
+[Smartbank AngularJS repo](https://github.com/Smartbank/angular.js).
 
 ## License
 
