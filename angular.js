@@ -1,5 +1,5 @@
 /**
- * @license AngularJS v1.4.4
+ * @license AngularJS v1.4.4-smartbank+sha.6e09d65
  * (c) 2010-2015 Google, Inc. http://angularjs.org
  * License: MIT
  */
@@ -57,7 +57,7 @@ function minErr(module, ErrorConstructor) {
       return match;
     });
 
-    message += '\nhttp://errors.angularjs.org/1.4.4/' +
+    message += '\nhttp://errors.angularjs.org/1.4.4-smartbank+sha.6e09d65/' +
       (module ? module + '/' : '') + code;
 
     for (i = SKIP_INDEXES, paramPrefix = '?'; i < templateArgs.length; i++, paramPrefix = '&') {
@@ -2374,11 +2374,11 @@ function toDebugString(obj) {
  * - `codeName` – `{string}` – Code name of the release, such as "jiggling-armfat".
  */
 var version = {
-  full: '1.4.4',    // all of these placeholder strings will be replaced by grunt's
+  full: '1.4.4-smartbank+sha.6e09d65',    // all of these placeholder strings will be replaced by grunt's
   major: 1,    // package task
   minor: 4,
   dot: 4,
-  codeName: 'pylon-requirement'
+  codeName: 'snapshot'
 };
 
 
@@ -5633,7 +5633,9 @@ function Browser(window, document, $log, $sniffer) {
 
   function getCurrentState() {
     try {
-      return history.state;
+      //Fix problem with MS Edge crashing.
+      //return history.state;
+      return null;
     } catch (e) {
       // MSIE can reportedly throw when there is no state (UNCONFIRMED).
     }
